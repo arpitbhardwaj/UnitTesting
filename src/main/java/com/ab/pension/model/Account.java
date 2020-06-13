@@ -1,5 +1,6 @@
 package com.ab.pension.model;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Currency;
@@ -15,10 +16,10 @@ public class Account {
     private String lastName;
     private LocalDate dob;
     private String taxId;
-    private long totalInvestmentValue;
+    private BigDecimal totalInvestmentValue;
     private Currency currency;
     private Set<String> investments;
-    private long availableCash;
+    private BigDecimal availableCash;
     private LocalDateTime expectedRetirement;
 
     public String getId() {
@@ -61,11 +62,11 @@ public class Account {
         this.taxId = taxId;
     }
 
-    public long getTotalInvestmentValue() {
+    public BigDecimal getTotalInvestmentValue() {
         return totalInvestmentValue;
     }
 
-    public void setTotalInvestmentValue(long totalInvestmentValue) {
+    public void setTotalInvestmentValue(BigDecimal totalInvestmentValue) {
         this.totalInvestmentValue = totalInvestmentValue;
     }
 
@@ -85,11 +86,11 @@ public class Account {
         this.investments = investments;
     }
 
-    public long getAvailableCash() {
+    public BigDecimal getAvailableCash() {
         return availableCash;
     }
 
-    public void setAvailableCash(long availableCash) {
+    public void setAvailableCash(BigDecimal availableCash) {
         this.availableCash = availableCash;
     }
 
